@@ -51,13 +51,15 @@ function Home() {
   React.useEffect(() => {
     if (token) {
       dispatch(getProfileAction(token))
+    }else{
+      navigate('/auth-login')
     }
-  }, [dispatch, token]);
+  }, [dispatch, token, navigate]);
 
 
 
   const getDataEvent = React.useCallback(async () => {
-    const { data } = await http().get(`/events/manage?sort=${sort}&page=${tabEvent}&limit=2&${searchParams}`)
+    const { data } = await http().get(`/events/manage?sort=${sort}&page=${tabEvent}&limit=5&${searchParams}`)
     setTotalPage(data.pageInfo.totalPage)
     console.log(data.pageInfo.totalPage)
     setEvent(data.results)
@@ -68,7 +70,7 @@ function Home() {
   }, [getDataEvent])
 
   const getDataEventWait = React.useCallback(async () => {
-    const { data } = await http().get(`/events/admin_list?sort=${sort}&page=${tabEvent}&limit=2&${searchParams}`)
+    const { data } = await http().get(`/events/admin_list?sort=${sort}&page=${tabEvent}&limit=5&${searchParams}`)
     setTotalPage(data.pageInfo.totalPage)
     setEventWait(data.results)
   }, [sort, tabEvent, searchParams])
