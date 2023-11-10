@@ -36,6 +36,7 @@ Web application For A web application for listing Event and creating new Event
   - #userName: company_hr
   - #Password: company123! 
 6. Don't forget download Backend App to use Frontend App.
+7. Web Deploy on Netlify https://cosmic-mooncake-802ddf.netlify.app/
 
 # Built with
 
