@@ -29,12 +29,12 @@ Web application For A web application for listing Event and creating new Event
 3. use env: VITE_BACKEND_URL=https://be-embreo.vercel.app/
 4. please use npm run dev to run app in terminal
 5. User Testing Vendor_Admin: 
-  #userName: super_admin
-  #password: admin123!
+  - #userName: super_admin
+  - #password: admin123!
 
-  User Testing Company_Hr_Admin:
-  #userName: company_hr
-  #Password: company123! 
+  - User Testing Company_Hr_Admin:
+  - #userName: company_hr
+  - #Password: company123! 
 6. Don't forget download Backend App to use Frontend App.
 
 # Built with
