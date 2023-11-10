@@ -136,7 +136,7 @@ function Home() {
       <div>
       </div>
 
-      <div className='flex justify-around pt-10'>
+      <div className='md:flex md:justify-around pt-10'>
         <div className='text-2xl text-black'>Dashboard</div>
         <div>
           <Button onClick={handleOpen}>Create Event</Button>
